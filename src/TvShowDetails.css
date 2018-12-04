@@ -1,0 +1,24 @@
+.top {
+    margin-top: 80px;
+}
+
+.TvShowName {
+   margin-bottom: 28px;
+}
+
+.text-center img{
+    margin-bottom: 10px;
+}
+
+.ButtonAdd{
+    background-color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+
+.TvShowSummary{
+    margin-bottom: 50px;
+}

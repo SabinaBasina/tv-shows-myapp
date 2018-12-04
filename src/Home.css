@@ -1,0 +1,19 @@
+.Pager button{
+    border-radius: 25px;
+    width: 140px;
+    height: 45px;
+    text-align: center;
+    color:#9d9d9d;
+    background-color: #222222;
+    border: none;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.Pager button:hover{
+    color: white;
+}
+
+

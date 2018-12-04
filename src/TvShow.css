@@ -1,0 +1,26 @@
+
+.TvShow p span{
+    color: rgb(124, 124, 124);
+    font-size: 14px;
+}
+
+.TvShow .RatingTvShow{
+    display: inline-block;
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(235, 145, 55);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 25px;
+    border: none;
+    margin-top: 226px;
+    margin-left: -22px;
+}
+
+.TvShow{
+    display:inline-block;   
+    position:relative;
+}
+

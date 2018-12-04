@@ -1,0 +1,21 @@
+.Nav{
+    color: black;
+    font-size: 100px;
+}
+
+
+.ButtonName{
+    font-size: 35px;
+    margin-right: 35px;
+}
+
+.ButtonProfile{
+    color: #9d9d9d;
+    border: none;
+    background-color: #222222;
+    margin-left: -5px;
+}
+
+.ButtonProfile:hover{
+    color:white;
+}

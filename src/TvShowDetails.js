@@ -28,8 +28,8 @@ class TvShowDetails extends Component {
         await this.checkAuthentication();
 
         let tvShow = (await http.get("https://api.tvmaze.com/shows/" + this.props.id)).data
-        
-        let favorites = await getFavorites(this.state.user.email)
+       
+        let favorites = this.state.isAuthenticated ? await getFavorites(this.state.user.email) : []
 
         this.setState({ 
             tvShow: tvShow, 
@@ -77,18 +77,19 @@ class TvShowDetails extends Component {
                 <Row>
                     <Col className="text-center" xs={12} sm={12} md={3} >
                             <img src={this.state.tvShow.image === undefined ? NoImage : this.state.tvShow.image.medium} />
-                            <Row>
-                                {!this.state.isFavoriteReady && <h4>Saving...</h4>}
-                                {this.state.isFavoriteReady && this.state.isReady && !this.state.isFavorite &&
-                                    <button className="ButtonAdd" onClick={this.addFavorite} >
-                                        Add
-                                    </button>}
-                                {this.state.isFavoriteReady && this.state.isReady && this.state.isFavorite &&
-                                    <button className="ButtonAdd" onClick={this.deleteFavorite} >
-                                        Delete
-                                    </button>}
-                            </Row>
-                        
+                            {this.state.isAuthenticated &&
+                                <div>
+                                    {!this.state.isFavoriteReady && <h4>Saving...</h4>}
+                                    {this.state.isFavoriteReady && this.state.isReady && !this.state.isFavorite &&
+                                        <button className="ButtonAdd" onClick={this.addFavorite} >
+                                            Add
+                                        </button>}
+                                    {this.state.isFavoriteReady && this.state.isReady && this.state.isFavorite &&
+                                        <button className="ButtonAdd" onClick={this.deleteFavorite} >
+                                            Delete
+                                        </button>}
+                                </div>
+                            }
                     </Col>    
                     
                     <Col className="text-justify" xs={12} sm={12} md={9}>    

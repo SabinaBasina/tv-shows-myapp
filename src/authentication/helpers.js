@@ -1,7 +1,7 @@
 var authConfig = {
     clientId: '0oahw6kikldsPhZmX0h7',
     issuer: 'https://dev-662522.oktapreview.com/oauth2/default',
-    redirectUri: 'http://localhost:3000/implicit/callback',
+    redirectUri: 'https://tv-shows-myapp.herokuapp.com/implicit/callback',
     scope: 'openid profile email',
 };
 

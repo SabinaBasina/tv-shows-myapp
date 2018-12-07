@@ -1,5 +1,3 @@
-import http from 'axios';
-
 var request = require("request");
 
 async function getFavoritesId(user) {

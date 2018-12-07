@@ -12,7 +12,7 @@ class Episodes extends Component {
 
         
     http
-        .get("http://api.tvmaze.com/singlesearch/shows?q=" + this.props.nameTvShow + "&embed=episodes")
+        .get("https://api.tvmaze.com/singlesearch/shows?q=" + this.props.nameTvShow + "&embed=episodes")
         .then(response => {
         this.setState({ tvShow: response.data}) 
     });

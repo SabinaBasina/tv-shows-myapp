@@ -3,6 +3,7 @@ import "./TvShowDetails.css"
 import http from 'axios';
 import { Grid, Row, Col } from 'react-bootstrap';
 import NoImage from './NoImage.jpg';
+import Episodes from './Episodes';
 import { checkAuthentication } from "./authentication/helpers"
 import { withAuth } from '@okta/okta-react';
 import { addFavorite, deleteFavorite, getFavorites } from "./db/helpers"
@@ -103,6 +104,17 @@ class TvShowDetails extends Component {
                             <b>Premiered:</b> <time>{this.state.tvShow.premiered}</time>
                         </div>
                     </Col>
+
+                </Row>
+
+                <Row className="text-center">
+                    <Col className="Episodes">
+                        <p>Episodes</p>
+                    </Col>
+                </Row>
+                
+                <Row>
+                    <Episodes nameTvShow = {this.state.tvShow.name} />
                 </Row>
 
             </Grid>}

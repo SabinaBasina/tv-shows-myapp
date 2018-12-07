@@ -1,9 +1,9 @@
 .top {
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 .TvShowName {
-   margin-bottom: 28px;
+   margin-bottom: 25px;
 }
 
 .text-center img{
@@ -21,4 +21,17 @@
 
 .TvShowSummary{
     margin-bottom: 50px;
+}
+
+.Episodes{
+    margin-top: 90px;
+    margin-bottom: 50px;
+    background-color: #222222;
+    border-radius: 8px;
+}
+
+.Episodes p{
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
 }

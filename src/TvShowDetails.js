@@ -77,7 +77,7 @@ class TvShowDetails extends Component {
                     
                 <Row>
                     <Col className="text-center" xs={12} sm={12} md={3} >
-                            <img src={this.state.tvShow.image === undefined ? NoImage : this.state.tvShow.image.medium} />
+                            <img src={this.state.tvShow.image == undefined ? NoImage : this.state.tvShow.image.medium} />
                             {this.state.isAuthenticated &&
                                 <div>
                                     {!this.state.isFavoriteReady && <h4>Saving...</h4>}
